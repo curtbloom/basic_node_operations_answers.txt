@@ -1,0 +1,113 @@
+1.
+
+Sort: returns the lines of the specified file in alphabetical order
+
+Sort Output:
+
+```
+done(data);
+          if (err) throw err;
+      const fileName = fullPath[0];
+      fs.readFile(fileName, (err, data) => {
+    break;
+    break;
+    case "cat":
+    commandLibrary.cat(userInputArray.slice(1));
+    commandLibrary.echo(userInputArray.slice(1).join(" "));
+    done(userInput);
+    process.stdout.write('\nprompt > ');
+    process.stdout.write(output);
+    }
+    });
+   //we will add the functionality of echo next within the object commandLibrary
+  "cat": function(fullPath) {
+  "echo": function(userInput) {
+  case "echo":
+  const command = userInputArray[0];
+  const userInputArray = userInput.split(" ");
+  switch (command) {
+  }
+  },
+ //parses the user input to understand which command was typed
+ }
+//the cat command
+//where we will store our commands
+//where we will store the logic of our commands
+//write out data
+const commandLibrary = {
+const fs = require("fs");
+function done(output) {
+function evaluateCmd(userInput) {
+module.exports.commandLibrary = commandLibrary;
+module.exports.evaluateCmd = evaluateCmd;
+}
+};
+```
+
+WC: gives us the newline, word and byte count for the specified file .
+
+WC Output:
+
+```
+ 11      44     366 bash.js
+```
+
+Uniq: give us the lines of a specified file sorted but removes any duplicate lines from the output.
+
+```
+const commands = require("./commands.js");
+
+//prompt the user for input
+process.stdout.write('prompt > ');
+
+// The stdin 'data' event triggers after a user types in a line
+process.stdin.on('data', (userInput) => {
+  userInput = userInput.toString().trim();
+ //evaluateCmd is a function which will be implemented in commands.js
+  commands.evaluateCmd(userInput);
+});
+```
+
+2.
+
+sort commands.js | less  --> These two commands sort the contents of commands.js
+                              while also allowing structured navigation through the code.
+
+Output:
+
+```
+//we will add the functionality of echo next within the object commandLibrary
+  "cat": function(fullPath) {
+  "echo": function(userInput) {
+  case "echo":
+  const command = userInputArray[0];
+  const userInputArray = userInput.split(" ");
+  switch (command) {
+  }
+  },
+ //parses the user input to understand which command was typed
+ }
+//the cat command
+//where we will store our commands
+//where we will store the logic of our commands
+//write out data
+const commandLibrary = {
+const fs = require("fs");
+function done(output) {
+function evaluateCmd(userInput) {
+module.exports.commandLibrary = commandLibrary;
+module.exports.evaluateCmd = evaluateCmd;
+}
+};
+```
+6.
+function reverseString(inputString) {
+  reverseArray = [];
+  var splitArray = inputString.split(' ');
+
+  splitArray.forEach( current => {
+      reverseArray.push( current.split("").reverse().join("") );
+  });
+
+  return reverseArray.join(" ");
+}
